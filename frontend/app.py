@@ -152,15 +152,6 @@ if not st.session_state.authenticated:
                     else:
                         st.error("Invalid credentials. Please verify username and password.")
 
-        st.markdown("<br>", unsafe_allow_html=True)
-        with st.expander("ℹ️ Demo User Accounts (Pre-configured)"):
-            st.markdown("""
-            | Account Persona | Username | Password | Access Role |
-            |---|---|---|---|
-            | **Senior Risk Director** | `admin` | `admin123` | Administrator (Full access, Underwriting, ETL triggers) |
-            | **Credit Risk Analyst** | `analyst` | `analyst123` | Underwriter / Analyst (Portfolio KPIs, queues, what-if simulator) |
-            """)
-
     st.stop()
 
 # ==========================================
